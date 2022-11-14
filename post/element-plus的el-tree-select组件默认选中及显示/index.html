@@ -40,11 +40,11 @@
   
   
   
-  <link rel="stylesheet" href="/minima.1667911739.css">
+  <link rel="stylesheet" href="/minima.1668433853.css">
 
   
   
-  <script defer type="text/javascript" src="/minima.1667911739.js"></script>
+  <script defer type="text/javascript" src="/minima.1668433853.js"></script>
 </head>
 <script>
   
@@ -169,8 +169,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="s">        /&gt;
 </span></span></span><span class="line"><span class="cl"><span class="s">      &lt;/el-form-item&gt;
 </span></span></span><span class="line"><span class="cl"><span class="s">      &lt;el-form-item label=&#34;状态&#34;&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s">      &lt;!--默认情况下，el-switch需绑定true/false,指定active-value可以使用数字，这里由于后台返回的状态是0/1，需要指定一下这个属性--&gt;
-</span></span></span><span class="line"><span class="cl"><span class="s">      &lt;el-switch v-model=&#34;form.status&#34; :active-value=&#34;form.status&#34;/&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">      &lt;!--默认情况下，el-switch需绑定true/false,指定active-value可以使用数字，这里由于后台返回的状态是0/1，需要指定一下这个属性,用active-value绑定要启用状态的值,用inactive-value绑定禁用状态的值--&gt;
+</span></span></span><span class="line"><span class="cl"><span class="s">      &lt;el-switch v-model=&#34;form.status&#34; :active-value=&#34;1&#34; :inactive-value=&#34;0&#34;/&gt;
 </span></span></span><span class="line"><span class="cl"><span class="s">      &lt;/el-form-item&gt;
 </span></span></span><span class="line"><span class="cl"><span class="s">      &lt;el-form-item&gt;
 </span></span></span><span class="line"><span class="cl"><span class="s">      &lt;el-button type=&#34;primary&#34; @click=&#34;onSubmit&#34;&gt;保存&lt;/el-button&gt;
