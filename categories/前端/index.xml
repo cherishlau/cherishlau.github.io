@@ -7,9 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Cherishlau 2022</copyright>
-    <lastBuildDate>Thu, 16 Feb 2023 18:56:51 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Feb 2023 19:16:36 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Element Plus的el Checkbox组件选中效果在打印时不显示的解决思路</title>
+      <title>Element Plus中使用el-upload组件——关于权限的处理思路</title>
+      <link>https://cherishlau.github.io/post/element-plus%E4%B8%AD%E4%BD%BF%E7%94%A8el-upload%E7%BB%84%E4%BB%B6%E5%85%B3%E4%BA%8E%E6%9D%83%E9%99%90%E7%9A%84%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Sat, 18 Feb 2023 19:16:36 +0800</pubDate>
+      
+      <guid>https://cherishlau.github.io/post/element-plus%E4%B8%AD%E4%BD%BF%E7%94%A8el-upload%E7%BB%84%E4%BB%B6%E5%85%B3%E4%BA%8E%E6%9D%83%E9%99%90%E7%9A%84%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/</guid>
+      <description>Element+ 提供了非常方便的上传组件，如官方文档描述：使用 list-type 属性来设定文件列表的样式。这里我要实现一个照片墙的功能，用来展示公司图片。
+权限部分划分如下：
+管理员：可预览 &amp;amp; 上传 &amp;amp; 删除图片 普通用户：只可预览 解决思路：
+官方提供了插槽，可自定义按钮来通过v-permisson设置权限。这种方法在我的业务场景下略显麻烦。说一下我的方法：
+官方提供了一个disabled属性，设置后可以禁止用户上传，删除按钮也被隐藏了起来，唯一不足的地方是无权限的用户仍然能看见上传图片的添加框。
+利用开发工具我们可以看到，在禁用状态下的el-upload组件会被赋予一个is-disabled的css样式。我们最简单的方法就是处理一下这个上传框的css样式，让它隐藏起来即可。
+代码如下：
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 &amp;lt;template&amp;gt; &amp;lt;div class=&amp;#34;upload-wrapper&amp;#34;&amp;gt; &amp;lt;el-upload ref=&amp;#34;upload&amp;#34; v-model:file-list=&amp;#34;fileList&amp;#34; :action=&amp;#34;uploadUrl&amp;#34; list-type=&amp;#34;picture-card&amp;#34; :data=&amp;#34;data&amp;#34; :disabled=&amp;#34;!hasAuth&amp;#34; :on-success=&amp;#34;handleSuccess&amp;#34; :on-preview=&amp;#34;handlePictureCardPreview&amp;#34; :on-remove=&amp;#34;handleRemove&amp;#34;&amp;gt; &amp;lt;el-icon&amp;gt;&amp;lt;Plus /&amp;gt;&amp;lt;/el-icon&amp;gt; &amp;lt;/el-upload&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;el-dialog v-model=&amp;#34;dialogVisible&amp;#34; width=&amp;#34;80%&amp;#34;&amp;gt; &amp;lt;img style=&amp;#34;width:100%&amp;#34; :src=&amp;#34;dialogImageUrl&amp;#34; alt=&amp;#34;Preview Image&amp;#34; /&amp;gt; &amp;lt;/el-dialog&amp;gt; &amp;lt;/template&amp;gt; 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 &amp;lt;script&amp;gt; import urlConfig from &amp;#39;@/api/config.</description>
+    </item>
+    
+    <item>
+      <title>Element Plus的el-checkbox组件选中效果在打印时不显示的解决思路</title>
       <link>https://cherishlau.github.io/post/element-plus%E7%9A%84el-checkbox%E7%BB%84%E4%BB%B6%E9%80%89%E4%B8%AD%E6%95%88%E6%9E%9C%E5%9C%A8%E6%89%93%E5%8D%B0%E6%97%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%80%9D%E8%B7%AF/</link>
       <pubDate>Thu, 16 Feb 2023 18:56:51 +0800</pubDate>
       
