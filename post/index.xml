@@ -7,7 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Cherishlau 2022</copyright>
-    <lastBuildDate>Sat, 25 Feb 2023 21:13:01 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Mar 2023 19:42:41 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS使用charts问题记录</title>
+      <link>https://cherishlau.github.io/post/ios%E4%BD%BF%E7%94%A8charts%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Fri, 17 Mar 2023 19:42:41 +0800</pubDate>
+      
+      <guid>https://cherishlau.github.io/post/ios%E4%BD%BF%E7%94%A8charts%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</guid>
+      <description>Charts是一款开源的图表库，iOS版本Charts，Android版本MPAndroidChart。
+我的Side Project在同时开发iOS和Android App，其中的图表功能都在使用这个库。不过在使用过程中遇到一些小问题，记录一下其中找不到资料的问题最后我是如何解决的。
+1.给图表设置了noDataText但数据为空时却不显示。 这个问题真是困扰了我几个小时的时间，我的图表数据源如下：
+1 2 3 4 5 private var mapData:[String:NSDecimalNumber] = [ &amp;#34;食品&amp;#34;:NSDecimalNumber(value:20.21), &amp;#34;交通&amp;#34;:NSDecimalNumber(value:2.00), &amp;#34;衣服&amp;#34;:NSDecimalNumber(value:200.00) ] 切换支出/收入类型时需要清空mapData重新查询数据然后重绘图表：
+1 2 3 4 5 6 7 8 @IBAction func segmentChanged(_ sender: UISegmentedControl) { totalCost = NSDecimalNumber(value:0) mapData = [:] getData() setup(pieChartView: chartView) setData() //更新图表数据 ... } 给ChartView设置空数据文字和样式：
+1 2 3 4 5 6 7 @IBOutlet var chartView:PieChartView! { didSet { chartView.noDataText = &amp;#34;No chart data available.&amp;#34; chartView.noDataTextColor = .</description>
+    </item>
+    
     <item>
       <title>2023.2月份的总结</title>
       <link>https://cherishlau.github.io/post/2023.2%E6%9C%88%E4%BB%BD%E7%9A%84%E6%80%BB%E7%BB%93/</link>
