@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Cherishlau 2022</copyright>
-    <lastBuildDate>Fri, 17 Mar 2023 19:42:41 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jul 2023 21:21:06 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/categories/swift/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS开发中关于addSubView的问题</title>
+      <link>https://cherishlau.github.io/post/ios%E5%BC%80%E5%8F%91%E4%B8%AD%E5%85%B3%E4%BA%8Eaddsubview%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 27 Jul 2023 21:21:06 +0800</pubDate>
+      
+      <guid>https://cherishlau.github.io/post/ios%E5%BC%80%E5%8F%91%E4%B8%AD%E5%85%B3%E4%BA%8Eaddsubview%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>今天在给我的Side Project App【小物品】添加Face ID解锁功能的时候，遇到了一个值得记录的问题。
+首先说一下Face ID解锁App的流程：
+1.主页面MainViewController
+2.Face ID验证页面AuthViewController
+实现这个功能很简单，如果开启了Face ID解锁，在进入App后，将AuthViewController的view添加到MainViewController的View上，以达到要求用户验证成功才能访问内容的目的。
+1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &amp;#34;Main&amp;#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &amp;#34;AuthViewController&amp;#34;) as! AuthViewController view.addSubview(viewController.view) } AuthViewController的视图被UISearchController遮挡:
+修改代码如下：
+1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &amp;#34;Main&amp;#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &amp;#34;AuthViewController&amp;#34;) as! AuthViewController parent?.view.addSubview(viewController.view) } 遮挡问题解决后，出现了新的问题，AuthViewController的视图验证按钮无法响应点击事件：
+AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。
+现在修改代码如下：</description>
+    </item>
+    
     <item>
       <title>iOS使用charts问题记录</title>
       <link>https://cherishlau.github.io/post/ios%E4%BD%BF%E7%94%A8charts%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/</link>
