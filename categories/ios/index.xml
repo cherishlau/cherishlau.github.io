@@ -22,8 +22,7 @@
 1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &amp;#34;Main&amp;#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &amp;#34;AuthViewController&amp;#34;) as! AuthViewController view.addSubview(viewController.view) } AuthViewController的视图被UISearchController遮挡:
 修改代码如下：
 1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &amp;#34;Main&amp;#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &amp;#34;AuthViewController&amp;#34;) as! AuthViewController parent?.view.addSubview(viewController.view) } 遮挡问题解决后，出现了新的问题，AuthViewController的视图验证按钮无法响应点击事件：
-AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。
-现在修改代码如下：</description>
+AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。</description>
     </item>
     
     <item>

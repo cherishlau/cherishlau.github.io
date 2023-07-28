@@ -12,8 +12,7 @@
 1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &#34;Main&#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &#34;AuthViewController&#34;) as! AuthViewController view.addSubview(viewController.view) } AuthViewController的视图被UISearchController遮挡:
 修改代码如下：
 1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &#34;Main&#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &#34;AuthViewController&#34;) as! AuthViewController parent?.view.addSubview(viewController.view) } 遮挡问题解决后，出现了新的问题，AuthViewController的视图验证按钮无法响应点击事件：
-AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。
-现在修改代码如下：" />
+AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://cherishlau.github.io/post/ios%E5%BC%80%E5%8F%91%E4%B8%AD%E5%85%B3%E4%BA%8Eaddsubview%E7%9A%84%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-07-27T21:21:06+08:00" />
@@ -30,8 +29,7 @@ AuthViewController控制器其实已经被销毁，但控制器的View却没有�
 1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &#34;Main&#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &#34;AuthViewController&#34;) as! AuthViewController view.addSubview(viewController.view) } AuthViewController的视图被UISearchController遮挡:
 修改代码如下：
 1 2 3 4 5 6 override func viewDidLoad() { ... let storyboard = UIStoryboard(name: &#34;Main&#34;, bundle: nil) let viewController = storyboard.instantiateViewController(withIdentifier: &#34;AuthViewController&#34;) as! AuthViewController parent?.view.addSubview(viewController.view) } 遮挡问题解决后，出现了新的问题，AuthViewController的视图验证按钮无法响应点击事件：
-AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。
-现在修改代码如下："/>
+AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。"/>
 
   
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -50,11 +48,11 @@ AuthViewController控制器其实已经被销毁，但控制器的View却没有�
   
   
   
-  <link rel="stylesheet" href="/minima.1690528768.css">
+  <link rel="stylesheet" href="/minima.1690529554.css">
 
   
   
-  <script defer type="text/javascript" src="/minima.1690528768.js"></script>
+  <script defer type="text/javascript" src="/minima.1690529554.js"></script>
 </head>
 <script>
   
@@ -113,11 +111,11 @@ AuthViewController控制器其实已经被销毁，但控制器的View却没有�
 <main>
 	<p></p>
 	<article class="md">
-		<p>今天在给我的Side Project App【小物品】添加Face ID解锁功能的时候，遇到了一个值得记录的问题。</p>
-<p>首先说一下Face ID解锁App的流程：</p>
-<p>1.主页面MainViewController</p>
-<p>2.Face ID验证页面AuthViewController</p>
-<p>实现这个功能很简单，如果开启了Face ID解锁，在进入App后，将AuthViewController的view添加到MainViewController的View上，以达到要求用户验证成功才能访问内容的目的。</p>
+		<p>  今天在给我的Side Project App【小物品】添加Face ID解锁功能的时候，遇到了一个值得记录的问题。</p>
+<p>  首先说一下Face ID解锁App的流程：</p>
+<p>  1.主页面MainViewController</p>
+<p>  2.Face ID验证页面AuthViewController</p>
+<p>  实现这个功能很简单，如果开启了Face ID解锁，在进入App后，将AuthViewController的view添加到MainViewController的View上，以达到要求用户验证成功才能访问内容的目的。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -157,9 +155,9 @@ AuthViewController控制器其实已经被销毁，但控制器的View却没有�
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>遮挡问题解决后，出现了新的问题，AuthViewController的视图验证按钮无法响应点击事件：</p>
+</div><p>  遮挡问题解决后，出现了新的问题，AuthViewController的视图验证按钮无法响应点击事件：</p>
 <p><img src="https://cherishlau.github.io/images/2023072801.gif" alt=""></p>
-<p>AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。</p>
+<p>  AuthViewController控制器其实已经被销毁，但控制器的View却没有被销毁，所以无法处理这个View上的点击事件。</p>
 <p>现在修改代码如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -185,7 +183,10 @@ AuthViewController控制器其实已经被销毁，但控制器的View却没有�
 <p><img src="https://cherishlau.github.io/images/2023072802.gif" alt=""></p>
 <h3 id="小结">小结：</h3>
 <p><code>addChild(_ childController: UIViewController)</code> VS <code>addSubview(_ view: UIView)</code>?</p>
-<p>如果你希望在当前的视图中添加一些简单的内容，并不需要响应任何事件，使用<code>addSubview</code>可以简单地解决问题。另一方面，如果新的 subview 有自己的 View Controller ，并且有丰富的功能需要实现，则需要使用<code>addChild</code>方法来添加新的 View Controller。但要说明的是，<code>addChild</code>本身不会对 View 执行任何操作，在这之后仍需要调用<code>addSubview</code>来将视图添加到View上。</p>
+<p>  如果你希望在当前的视图中添加一些简单的内容，并不需要响应任何事件，使用<code>addSubview</code>可以简单地解决问题。另一方面，如果新的 subview 有自己的 View Controller ，并且有丰富的功能需要实现，则需要使用<code>addChild</code>方法来添加新的 View Controller。但要说明的是，<code>addChild</code>本身不会对 View 执行任何操作，在这之后仍需要调用<code>addSubview</code>来将视图添加到View上。</p>
+<hr>
+<p>  另外，推荐一个很棒的视频转Gif的工具。这是一款开源免费的软件，同时支持Windows和Mac端。本次文章的Gif图片是录屏之后用它来制作的。</p>
+<p><em><a href="https://gif.ski" title="">Gifski</a></em></p>
 
 	</article>
 </main>
