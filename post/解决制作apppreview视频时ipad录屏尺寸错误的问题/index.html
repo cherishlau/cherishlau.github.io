@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>解决制作AppPreview视频时iPad录屏尺寸错误的问题 | Sug3rs‘s Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="今天决定给小物品制作一个App Preview视频。使用工具：iMovie &#43; Final Cut Pro。
+iPhone模拟器录屏后，导入到iMovie App预览项目中，剪辑和上传这个过程没有遇到问题。然而在制作iPad视频时，录屏后的视频尺寸为2360 × 1640（横屏），App Store Connect要求的尺寸为1600×1200（横屏）。
+如果你的视频尺寸不正确，上传的时候会出现这样的提示：
+在iMovie中如何修改视频尺寸？
+第一次学习制作视频，水平比较菜，对iMovie和Final Cut Pro的使用也不是很熟悉。我查了一些资料，但是没有找到修改视频尺寸的方法。
+解决方案：
+我的电脑里安装了Final Cut Pro，于是在一番探索后找到了一个解决方法：
+1.将视频导入到Final Cut Pro中。
+2.将视频拖入到时间线，这时会出现一个弹出框，在这里可以设置一个自定义尺寸。
+3.导出视频。
+注意：导出前先点击选中时间线，出现黄色边框后，在【文件】-&gt; 【共享】中选择【导出文件】。
+此时可以将导出后的视频导入到iMovie中愉快地剪辑了。
+iMove参考教程：
+iMovie 剪辑使用手册 在 Mac 上的 iMovie 剪辑中创建 App 预览 ">
+<meta name="author" content="">
+<link rel="canonical" href="https://cherishlau.github.io/post/%E8%A7%A3%E5%86%B3%E5%88%B6%E4%BD%9Capppreview%E8%A7%86%E9%A2%91%E6%97%B6ipad%E5%BD%95%E5%B1%8F%E5%B0%BA%E5%AF%B8%E9%94%99%E8%AF%AF%E7%9A%84%E9%97%AE%E9%A2%98/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.bc1149f4a72aa4858d3a9f71462f75e5884ffe8073ea9d6d5761d5663d651e20.css" integrity="sha256-vBFJ9KcqpIWNOp9xRi915YhP/oBz6p1tV2HVZj1lHiA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://cherishlau.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cherishlau.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cherishlau.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cherishlau.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://cherishlau.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="解决制作AppPreview视频时iPad录屏尺寸错误的问题" />
+<meta property="og:description" content="今天决定给小物品制作一个App Preview视频。使用工具：iMovie &#43; Final Cut Pro。
+iPhone模拟器录屏后，导入到iMovie App预览项目中，剪辑和上传这个过程没有遇到问题。然而在制作iPad视频时，录屏后的视频尺寸为2360 × 1640（横屏），App Store Connect要求的尺寸为1600×1200（横屏）。
+如果你的视频尺寸不正确，上传的时候会出现这样的提示：
+在iMovie中如何修改视频尺寸？
+第一次学习制作视频，水平比较菜，对iMovie和Final Cut Pro的使用也不是很熟悉。我查了一些资料，但是没有找到修改视频尺寸的方法。
+解决方案：
+我的电脑里安装了Final Cut Pro，于是在一番探索后找到了一个解决方法：
+1.将视频导入到Final Cut Pro中。
+2.将视频拖入到时间线，这时会出现一个弹出框，在这里可以设置一个自定义尺寸。
+3.导出视频。
+注意：导出前先点击选中时间线，出现黄色边框后，在【文件】-&gt; 【共享】中选择【导出文件】。
+此时可以将导出后的视频导入到iMovie中愉快地剪辑了。
+iMove参考教程：
+iMovie 剪辑使用手册 在 Mac 上的 iMovie 剪辑中创建 App 预览 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cherishlau.github.io/post/%E8%A7%A3%E5%86%B3%E5%88%B6%E4%BD%9Capppreview%E8%A7%86%E9%A2%91%E6%97%B6ipad%E5%BD%95%E5%B1%8F%E5%B0%BA%E5%AF%B8%E9%94%99%E8%AF%AF%E7%9A%84%E9%97%AE%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-07-29T13:58:18+08:00" />
+<meta property="article:modified_time" content="2023-07-29T13:58:18+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="解决制作AppPreview视频时iPad录屏尺寸错误的问题"/>
+<meta name="twitter:description" content="今天决定给小物品制作一个App Preview视频。使用工具：iMovie &#43; Final Cut Pro。
+iPhone模拟器录屏后，导入到iMovie App预览项目中，剪辑和上传这个过程没有遇到问题。然而在制作iPad视频时，录屏后的视频尺寸为2360 × 1640（横屏），App Store Connect要求的尺寸为1600×1200（横屏）。
+如果你的视频尺寸不正确，上传的时候会出现这样的提示：
+在iMovie中如何修改视频尺寸？
+第一次学习制作视频，水平比较菜，对iMovie和Final Cut Pro的使用也不是很熟悉。我查了一些资料，但是没有找到修改视频尺寸的方法。
+解决方案：
+我的电脑里安装了Final Cut Pro，于是在一番探索后找到了一个解决方法：
+1.将视频导入到Final Cut Pro中。
+2.将视频拖入到时间线，这时会出现一个弹出框，在这里可以设置一个自定义尺寸。
+3.导出视频。
+注意：导出前先点击选中时间线，出现黄色边框后，在【文件】-&gt; 【共享】中选择【导出文件】。
+此时可以将导出后的视频导入到iMovie中愉快地剪辑了。
+iMove参考教程：
+iMovie 剪辑使用手册 在 Mac 上的 iMovie 剪辑中创建 App 预览 "/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://cherishlau.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "解决制作AppPreview视频时iPad录屏尺寸错误的问题",
+      "item": "https://cherishlau.github.io/post/%E8%A7%A3%E5%86%B3%E5%88%B6%E4%BD%9Capppreview%E8%A7%86%E9%A2%91%E6%97%B6ipad%E5%BD%95%E5%B1%8F%E5%B0%BA%E5%AF%B8%E9%94%99%E8%AF%AF%E7%9A%84%E9%97%AE%E9%A2%98/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "解决制作AppPreview视频时iPad录屏尺寸错误的问题",
+  "name": "解决制作AppPreview视频时iPad录屏尺寸错误的问题",
+  "description": "今天决定给小物品制作一个App Preview视频。使用工具：iMovie + Final Cut Pro。\niPhone模拟器录屏后，导入到iMovie App预览项目中，剪辑和上传这个过程没有遇到问题。然而在制作iPad视频时，录屏后的视频尺寸为2360 × 1640（横屏），App Store Connect要求的尺寸为1600×1200（横屏）。\n如果你的视频尺寸不正确，上传的时候会出现这样的提示：\n在iMovie中如何修改视频尺寸？\n第一次学习制作视频，水平比较菜，对iMovie和Final Cut Pro的使用也不是很熟悉。我查了一些资料，但是没有找到修改视频尺寸的方法。\n解决方案：\n我的电脑里安装了Final Cut Pro，于是在一番探索后找到了一个解决方法：\n1.将视频导入到Final Cut Pro中。\n2.将视频拖入到时间线，这时会出现一个弹出框，在这里可以设置一个自定义尺寸。\n3.导出视频。\n注意：导出前先点击选中时间线，出现黄色边框后，在【文件】-\u0026gt; 【共享】中选择【导出文件】。\n此时可以将导出后的视频导入到iMovie中愉快地剪辑了。\niMove参考教程：\niMovie 剪辑使用手册 在 Mac 上的 iMovie 剪辑中创建 App 预览 ",
+  "keywords": [
+    
+  ],
+  "articleBody": "今天决定给小物品制作一个App Preview视频。使用工具：iMovie + Final Cut Pro。\niPhone模拟器录屏后，导入到iMovie App预览项目中，剪辑和上传这个过程没有遇到问题。然而在制作iPad视频时，录屏后的视频尺寸为2360 × 1640（横屏），App Store Connect要求的尺寸为1600×1200（横屏）。\n如果你的视频尺寸不正确，上传的时候会出现这样的提示：\n在iMovie中如何修改视频尺寸？\n第一次学习制作视频，水平比较菜，对iMovie和Final Cut Pro的使用也不是很熟悉。我查了一些资料，但是没有找到修改视频尺寸的方法。\n解决方案：\n我的电脑里安装了Final Cut Pro，于是在一番探索后找到了一个解决方法：\n1.将视频导入到Final Cut Pro中。\n2.将视频拖入到时间线，这时会出现一个弹出框，在这里可以设置一个自定义尺寸。\n3.导出视频。\n注意：导出前先点击选中时间线，出现黄色边框后，在【文件】-\u003e 【共享】中选择【导出文件】。\n此时可以将导出后的视频导入到iMovie中愉快地剪辑了。\niMove参考教程：\niMovie 剪辑使用手册 在 Mac 上的 iMovie 剪辑中创建 App 预览 ",
+  "wordCount" : "39",
+  "inLanguage": "en",
+  "datePublished": "2023-07-29T13:58:18+08:00",
+  "dateModified": "2023-07-29T13:58:18+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://cherishlau.github.io/post/%E8%A7%A3%E5%86%B3%E5%88%B6%E4%BD%9Capppreview%E8%A7%86%E9%A2%91%E6%97%B6ipad%E5%BD%95%E5%B1%8F%E5%B0%BA%E5%AF%B8%E9%94%99%E8%AF%AF%E7%9A%84%E9%97%AE%E9%A2%98/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sug3rs‘s Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cherishlau.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://cherishlau.github.io" accesskey="h" title="Sug3rs‘s Blog (Alt + H)">Sug3rs‘s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://cherishlau.github.io/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cherishlau.github.io/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cherishlau.github.io/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      解决制作AppPreview视频时iPad录屏尺寸错误的问题
+    </h1>
+    <div class="post-meta"><span title='2023-07-29 13:58:18 +0800 CST'>July 29, 2023</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>今天决定给小物品制作一个App Preview视频。使用工具：<code>iMovie</code> + <code>Final Cut Pro</code>。</p>
+<p>iPhone模拟器录屏后，导入到iMovie App预览项目中，剪辑和上传这个过程没有遇到问题。然而在制作iPad视频时，录屏后的视频尺寸为<strong>2360 × 1640</strong>（横屏），App Store Connect要求的尺寸为<strong>1600×1200</strong>（横屏）。</p>
+<p>如果你的视频尺寸不正确，上传的时候会出现这样的提示：</p>
+<p><img loading="lazy" src="https://cherishlau.github.io/images/2023-07-29-14.03.17.png" alt=""  />
+</p>
+<p><strong>在iMovie中如何修改视频尺寸？</strong></p>
+<p>第一次学习制作视频，水平比较菜，对<code>iMovie</code>和<code>Final Cut Pro</code>的使用也不是很熟悉。我查了一些资料，但是没有找到修改视频尺寸的方法。</p>
+<hr>
+<p><strong>解决方案：</strong></p>
+<p>我的电脑里安装了<code>Final Cut Pro</code>，于是在一番探索后找到了一个解决方法：</p>
+<p>1.将视频导入到Final Cut Pro中。</p>
+<p><img loading="lazy" src="https://cherishlau.github.io/images/finalcut-2023072901.gif" alt=""  />
+</p>
+<p>2.将视频拖入到时间线，这时会出现一个弹出框，在这里可以设置一个自定义尺寸。</p>
+<p><img loading="lazy" src="https://cherishlau.github.io/images/finalcut-2023072902.gif" alt=""  />
+</p>
+<p>3.导出视频。</p>
+<p><em>注意：导出前先点击选中时间线，出现黄色边框后，在【文件】-&gt; 【共享】中选择【导出文件】。</em></p>
+<p><img loading="lazy" src="https://cherishlau.github.io/images/finalcut-2023072903.gif" alt=""  />
+</p>
+<p>此时可以将导出后的视频导入到iMovie中愉快地剪辑了。</p>
+<p><strong>iMove参考教程：</strong></p>
+<ol>
+<li><a href="https://support.apple.com/zh-cn/guide/imovie/welcome/mac">iMovie 剪辑使用手册</a></li>
+<li><a href="https://support.apple.com/zh-cn/guide/imovie/movd5d987b5d/mac">在 Mac 上的 iMovie 剪辑中创建 App 预览</a></li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>© Cherishlau 2023</span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
