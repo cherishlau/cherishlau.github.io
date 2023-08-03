@@ -149,6 +149,25 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2>关于小物品App
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>小物品是我在2021年开发的一款管理物品的App。当时我拥有很多钢笔、自动铅笔，并且当时我的工作有大量空闲的时候去做自己的事情，于是决定给自己做一款App来管理我各种各样的物品。
+2021年从教培行业离职后，开始接触极简和断舍离的思想，开始逐渐减少自己的物品：我卖掉了很多各种各样的物品，留下自己最喜欢和最常用的，也开始逐渐体验到了物尽其用的快乐。
+有些物品可能是冲动消费买下来吃灰的，有些物品可能十分昂贵，但却物有所值。于是我在小物品中增加了平均成本和物品归档停用的功能。
+简单说说这几个功能 平均成本 这件物品是否物有所值？平均到每天多少钱？
+2022年我购买了新款的MacBook M1，迫不及待地记录到小物品中，看到平均成本每天在下降觉得每天都赚到了。 还有我在2016年4月30日z买的Kindle Oasis第一代，至今天已经使用了7年3个月零4天，中途换过一次电池。平均每天的成本是0.9元，用它阅读了很多书籍，简直太值了。	归档 卖掉的、送人的、坏掉的物品，可能并不想直接从App里删除掉，这时我们可以把它归档保存，留着日后翻看。
+物品停用 要想准确计算物品的平均成本就要知道物品从什么时间开始用到什么时候，一般来说，物品在停止使用前需要做一个归档操作，在这之后为它设置一个停用时间，这个时间段就是物品的实际使用时间。
+小物品的未来 这是一款极小众的App，至今已上架了2年多，迭代了48个版本，并且一直再积极维护中。 两年来小物品一直是免费不盈利的状态，极偶尔会收到一些用户的打赏。从几天前开始小物品开始收费了，也是希望这款App能更好地发展下去，变成最好用的物品管理App。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-03 19:48:15 +0800 CST'>August 3, 2023</span></footer>
+  <a class="entry-link" aria-label="post link to 关于小物品App" href="https://cherishlau.github.io/post/%E5%85%B3%E4%BA%8E%E5%B0%8F%E7%89%A9%E5%93%81app/"></a>
+</article>
+
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2>解决制作AppPreview视频时iPad录屏尺寸错误的问题
     </h2>
   </header>
@@ -246,29 +265,6 @@ AuthViewController控制器其实已经被销毁，但控制器的View却没有�
   </div>
   <footer class="entry-footer"><span title='2023-02-18 19:16:36 +0800 CST'>February 18, 2023</span></footer>
   <a class="entry-link" aria-label="post link to Element Plus中使用el-upload组件——关于权限的处理思路" href="https://cherishlau.github.io/post/element-plus%E4%B8%AD%E4%BD%BF%E7%94%A8el-upload%E7%BB%84%E4%BB%B6%E5%85%B3%E4%BA%8E%E6%9D%83%E9%99%90%E7%9A%84%E5%A4%84%E7%90%86%E6%80%9D%E8%B7%AF/"></a>
-</article>
-
-
-<article class="post-entry tag-entry"> 
-  <header class="entry-header">
-    <h2>Element Plus的el-checkbox组件选中效果在打印时不显示的解决思路
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>公司项目其中有一项功能是在线填写&amp;打印表格，在打印的时候遇到el-checkbox无法打印出选中的问题。
-我要实现的表格如下：
-打印效果如下：
-经过用开发者工具排查应该是浏览器忽略了checkbox的背景颜色，导致checkbox选中的蓝色背景颜色无法显示，并且由于选中的checkbox中after伪元素的符号是白色，所以在打印时看起来是未选中的状态。
-解决方法：
-1.可以直接修改伪元素的符号颜色（这里我没做测试）
-2.我的解决方法：
-由于为了样式符合整体表格的风格，我直接修改了checkbox选中的边框颜色、背景颜色和伪元素：
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 table &gt;&gt;&gt; .el-checkbox__inner { border-color:black; } table &gt;&gt;&gt; .el-checkbox__input.is-checked .el-checkbox__inner { background: none; border-color:black; } table &gt;&gt;&gt; .el-checkbox__input.is-checked .el-checkbox__inner::after { content: &#39;\2714&#39;; /* 设置选中后的✓符号*/ transform:none; top: 5px; height: 0; left:1px; } 最后效果如下图：
-编辑模式
-打印模式</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-02-16 18:56:51 +0800 CST'>February 16, 2023</span></footer>
-  <a class="entry-link" aria-label="post link to Element Plus的el-checkbox组件选中效果在打印时不显示的解决思路" href="https://cherishlau.github.io/post/element-plus%E7%9A%84el-checkbox%E7%BB%84%E4%BB%B6%E9%80%89%E4%B8%AD%E6%95%88%E6%9E%9C%E5%9C%A8%E6%89%93%E5%8D%B0%E6%97%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%9A%84%E8%A7%A3%E5%86%B3%E6%80%9D%E8%B7%AF/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

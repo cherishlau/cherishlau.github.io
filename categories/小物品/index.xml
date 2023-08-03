@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>小物品 on Sug3rs‘s Blog</title>
+    <link>https://cherishlau.github.io/categories/%E5%B0%8F%E7%89%A9%E5%93%81/</link>
+    <description>Recent content in 小物品 on Sug3rs‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Cherishlau 2023</copyright>
+    <lastBuildDate>Thu, 03 Aug 2023 19:48:15 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/categories/%E5%B0%8F%E7%89%A9%E5%93%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于小物品App</title>
+      <link>https://cherishlau.github.io/post/%E5%85%B3%E4%BA%8E%E5%B0%8F%E7%89%A9%E5%93%81app/</link>
+      <pubDate>Thu, 03 Aug 2023 19:48:15 +0800</pubDate>
+      
+      <guid>https://cherishlau.github.io/post/%E5%85%B3%E4%BA%8E%E5%B0%8F%E7%89%A9%E5%93%81app/</guid>
+      <description>小物品是我在2021年开发的一款管理物品的App。当时我拥有很多钢笔、自动铅笔，并且当时我的工作有大量空闲的时候去做自己的事情，于是决定给自己做一款App来管理我各种各样的物品。
+2021年从教培行业离职后，开始接触极简和断舍离的思想，开始逐渐减少自己的物品：我卖掉了很多各种各样的物品，留下自己最喜欢和最常用的，也开始逐渐体验到了物尽其用的快乐。
+有些物品可能是冲动消费买下来吃灰的，有些物品可能十分昂贵，但却物有所值。于是我在小物品中增加了平均成本和物品归档停用的功能。
+简单说说这几个功能 平均成本 这件物品是否物有所值？平均到每天多少钱？
+2022年我购买了新款的MacBook M1，迫不及待地记录到小物品中，看到平均成本每天在下降觉得每天都赚到了。 还有我在2016年4月30日z买的Kindle Oasis第一代，至今天已经使用了7年3个月零4天，中途换过一次电池。平均每天的成本是0.9元，用它阅读了很多书籍，简直太值了。	归档 卖掉的、送人的、坏掉的物品，可能并不想直接从App里删除掉，这时我们可以把它归档保存，留着日后翻看。
+物品停用 要想准确计算物品的平均成本就要知道物品从什么时间开始用到什么时候，一般来说，物品在停止使用前需要做一个归档操作，在这之后为它设置一个停用时间，这个时间段就是物品的实际使用时间。
+小物品的未来 这是一款极小众的App，至今已上架了2年多，迭代了48个版本，并且一直再积极维护中。 两年来小物品一直是免费不盈利的状态，极偶尔会收到一些用户的打赏。从几天前开始小物品开始收费了，也是希望这款App能更好地发展下去，变成最好用的物品管理App。</description>
+    </item>
+    
+  </channel>
+</rss>
