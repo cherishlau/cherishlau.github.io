@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>others on Sug3rs‘s Blog</title>
+    <link>https://cherishlau.github.io/categories/others/</link>
+    <description>Recent content in others on Sug3rs‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© Cherishlau 2023</copyright>
+    <lastBuildDate>Mon, 13 Nov 2023 09:14:42 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/categories/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS中python报错zsh: Command Not Found: Python</title>
+      <link>https://cherishlau.github.io/post/macos%E4%B8%ADpython%E6%8A%A5%E9%94%99zsh-command-not-found-python/</link>
+      <pubDate>Mon, 13 Nov 2023 09:14:42 +0800</pubDate>
+      
+      <guid>https://cherishlau.github.io/post/macos%E4%B8%ADpython%E6%8A%A5%E9%94%99zsh-command-not-found-python/</guid>
+      <description> zsh: Command Not Found: Python
+解决方法 将python添加到zsh，在终端输入
+echo &amp;#34;alias python=/usr/bin/python3&amp;#34; &amp;gt;&amp;gt; ~/.zshrc 刷新配置信息
+source ~/.zshrc </description>
+    </item>
+    
+  </channel>
+</rss>

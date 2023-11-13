@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© Cherishlau 2023</copyright>
-    <lastBuildDate>Sun, 06 Aug 2023 12:43:43 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 09:14:42 +0800</lastBuildDate><atom:link href="https://cherishlau.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS中python报错zsh: Command Not Found: Python</title>
+      <link>https://cherishlau.github.io/post/macos%E4%B8%ADpython%E6%8A%A5%E9%94%99zsh-command-not-found-python/</link>
+      <pubDate>Mon, 13 Nov 2023 09:14:42 +0800</pubDate>
+      
+      <guid>https://cherishlau.github.io/post/macos%E4%B8%ADpython%E6%8A%A5%E9%94%99zsh-command-not-found-python/</guid>
+      <description> zsh: Command Not Found: Python
+解决方法 将python添加到zsh，在终端输入
+echo &amp;#34;alias python=/usr/bin/python3&amp;#34; &amp;gt;&amp;gt; ~/.zshrc 刷新配置信息
+source ~/.zshrc </description>
+    </item>
+    
     <item>
       <title>收纳控如何使用小物品</title>
       <link>https://cherishlau.github.io/post/%E6%94%B6%E7%BA%B3%E6%8E%A7%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%89%A9%E5%93%81/</link>
